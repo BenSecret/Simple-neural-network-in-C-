@@ -15,9 +15,9 @@ int main()
 {
 	MatrixXd X(4,3);
 	X << 0, 0, 1,
-		 0, 1, 1, 
-		 1, 0, 1,
-		 1, 1, 1;
+	     0, 1, 1, 
+	     1, 0, 1,
+	     1, 1, 1;
 
 	MatrixXd y(4,1);
 	y << 0, 1, 1, 0;
@@ -27,7 +27,7 @@ int main()
 	synapse_1 = MatrixXd::Random(4, 1);
 
 	MatrixXd layer_0, layer_1, layer_1_error, layer_1_delta,
-			 layer_2, layer_2_error, layer_2_delta;
+		 layer_2, layer_2_error, layer_2_delta;
 
 	float alpha = 1;
 
