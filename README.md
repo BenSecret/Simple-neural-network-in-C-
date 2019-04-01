@@ -9,6 +9,7 @@ See Trask's original Python implementation here (with full annotations and expla
 http://iamtrask.github.io/2015/07/27/python-network-part2/
 
 Download Eigen from here:
+
 http://eigen.tuxfamily.org/index.php?title=Main_Page
 
 If you're just building and running your C++ files from something simple like Sublime Text, all you need to do is put the Eigen subfolder (with things like Dense) in your working directory and change the header to commas:
