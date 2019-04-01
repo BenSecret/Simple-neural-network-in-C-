@@ -12,6 +12,7 @@ Download Eigen from here:
 http://eigen.tuxfamily.org/index.php?title=Main_Page
 
 If you're just building and running your C++ files from something simple like Sublime Text, all you need to do is put the Eigen subfolder (with things like Dense) in your working directory and change the header to commas:
+
 #include "Eigen/Dense"
 
 Then Cmd+B
