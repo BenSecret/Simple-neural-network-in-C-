@@ -50,7 +50,3 @@ int main()
 		synapse_0 -= alpha * (layer_0.transpose() * layer_1_delta);
 	}
 }
-
-
-
-
