@@ -1,7 +1,7 @@
 # Simple-neural-network-in-C++
 A really simple toy code neural network in C++ (derived from Andrew Trask)
 
-Andrew Trask's 'Neural Network in 11 lines of Python' was the thing that made machine learning approachable for me. I learn so much better just playing around with something.
+Andrew Trask's 'Neural Network in 11 lines of Python' was the thing that made machine learning approachable for me. I learn so much better having something to play around with.
 
 This is my attempt to recreate it in C++ using the Eigen library. Eigen's used by the likes of Tensorflow, and functions a lot like Numpy in Python. Which makes this toy code almost as simple and readable as the Python equivalent.
 
