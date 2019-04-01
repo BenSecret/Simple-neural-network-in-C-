@@ -36,7 +36,6 @@ int main()
 		layer_0 = X;
 		layer_1 = sigmoid(layer_0 * synapse_0);
 		layer_2 = sigmoid(layer_1 * synapse_1);
-
 		layer_2_error = layer_2 - y;
 
 		if (i % 10000 == 0) {
