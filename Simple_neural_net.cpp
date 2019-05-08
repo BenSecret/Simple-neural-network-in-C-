@@ -4,29 +4,29 @@
 using namespace Eigen;
 using namespace std;
 
-inline MatrixXd sigmoid(const MatrixXd& v) {
+inline MatrixXf sigmoid(const MatrixXf& v) {
 	return (1.0 + (-v).array().exp()).inverse().matrix(); }
 
-inline MatrixXd sigmoidDerivative(const MatrixXd& v) {
+inline MatrixXf sigmoidDerivative(const MatrixXf& v) {
 	return v.array() * (1 - v.array()); }
 
 
 int main() 
 {
-	MatrixXd X(4,3);
+	MatrixXf X(4,3);
 	X << 0, 0, 1,
 	     0, 1, 1, 
 	     1, 0, 1,
 	     1, 1, 1;
 
-	MatrixXd y(4,1);
+	MatrixXf y(4,1);
 	y << 0, 1, 1, 0;
 
-	MatrixXd synapse_0, synapse_1;
-	synapse_0 = MatrixXd::Random(3, 4);
-	synapse_1 = MatrixXd::Random(4, 1);
+	MatrixXf synapse_0, synapse_1;
+	synapse_0 = MatrixXf::Random(3, 4);
+	synapse_1 = MatrixXf::Random(4, 1);
 
-	MatrixXd layer_0, layer_1, layer_1_error, layer_1_delta,
+	MatrixXf layer_0, layer_1, layer_1_error, layer_1_delta,
 		 layer_2, layer_2_error, layer_2_delta;
 
 	float alpha = 1;
