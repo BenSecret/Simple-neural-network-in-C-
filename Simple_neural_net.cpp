@@ -20,7 +20,10 @@ int main()
 	     1, 1, 1;
 
 	MatrixXf y(4,1);
-	y << 0, 1, 1, 0;
+	y << 0, 
+	     1, 
+	     1, 
+	     0;
 
 	MatrixXf synapse_0, synapse_1;
 	synapse_0 = MatrixXf::Random(3, 4);
